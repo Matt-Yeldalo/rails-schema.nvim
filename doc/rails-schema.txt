@@ -1,0 +1,14 @@
+*rails-schema.nvim*                         Inspect Rails model database schema
+
+COMMANDS                                                   *rails-schema-commands*
+
+:RailsSchema
+    Toggle a floating window showing the schema for the current model.
+
+SETUP                                                       *rails-schema-setup*
+
+Call require("rails-schema").setup({}) and define a keymap, for example:
+
+    vim.keymap.set("n", "<leader>rs", "<cmd>RailsSchema<cr>")
+
+Inside the window, press q or <Esc> to close it.
