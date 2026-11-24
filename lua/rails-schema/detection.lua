@@ -24,7 +24,7 @@ function M.model_name(path, root)
   path = normalize(path or vim.api.nvim_buf_get_name(0))
   root = normalize(root)
 
-  local relative = vim.fs.relpath(path, root)
+  local relative = vim.fs.relpath(root, path)
   if not relative or not relative:match("^app/models/.+%.rb$") then
     return nil, "Current file is not under app/models"
   end

@@ -13,7 +13,7 @@ model.
 
 ```lua
 {
-  "your-username/rails-schema.nvim",
+  "matt-yeldalo/rails-schema.nvim",
   ft = "ruby",
   config = function()
     require("rails-schema").setup({
